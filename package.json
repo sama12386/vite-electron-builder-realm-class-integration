@@ -12,7 +12,7 @@
     "compile": "electron-builder build --config .electron-builder.config.js --dir --config.asar=false",
     "pretest": "npm run build",
     "test": "node tests/app.spec.js",
-    "watch": "node scripts/watch.js",
+    "dev": "node scripts/watch.js",
     "lint": "eslint . --ext js,ts,vue",
     "typecheck-main": "tsc --noEmit -p packages/main/tsconfig.json",
     "typecheck-preload": "tsc --noEmit -p packages/preload/tsconfig.json",
@@ -40,6 +40,9 @@
   },
   "dependencies": {
     "electron-updater": "4.6.5",
+    "patch-package": "^6.4.7",
+    "react-native": "file:react-native",
+    "realm": "10.10.1",
     "vue": "3.2.26"
   }
 }

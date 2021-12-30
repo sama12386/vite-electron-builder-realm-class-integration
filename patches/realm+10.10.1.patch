@@ -1,0 +1,13 @@
+diff --git a/node_modules/realm/lib/index.js b/node_modules/realm/lib/index.js
+index 2680edf..cb8c7ca 100644
+--- a/node_modules/realm/lib/index.js
++++ b/node_modules/realm/lib/index.js
+@@ -25,7 +25,7 @@ function getRealmConstructor(environment) {
+   switch (environment) {
+     case "node.js":
+     case "electron":
+-      var analytics = nodeRequire("./submit-analytics");
++      var analytics = require("./submit-analytics");
+       analytics.submitProductionAnalytics("Run").catch(() => {
+         // fail silently -- the caller is not responsible for handling
+         // errors in analytics submission

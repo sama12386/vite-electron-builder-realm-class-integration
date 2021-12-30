@@ -1,7 +1,8 @@
 <script lang="ts" setup>
-import ReactiveCounter from '/@/components/ReactiveCounter.vue';
-import ReactiveHash from '/@/components/ReactiveHash.vue';
-import ElectronVersions from '/@/components/ElectronVersions.vue';</script>
+// import ReactiveCounter from '/@/components/ReactiveCounter.vue';
+// import ReactiveHash from '/@/components/ReactiveHash.vue';
+// import ElectronVersions from '/@/components/ElectronVersions.vue';
+import RealmView from '/@/components/RealmView.vue';</script>
 
 <template>
   <img
@@ -20,19 +21,24 @@ import ElectronVersions from '/@/components/ElectronVersions.vue';</script>
   </p>
 
   <fieldset>
-    <legend>Test Vue Reactivity</legend>
-    <reactive-counter />
+    <legend>Test Realm Class Integration</legend>
+    <realm-view />
   </fieldset>
 
-  <fieldset>
-    <legend>Test Node.js API</legend>
-    <reactive-hash />
-  </fieldset>
+  <!--  <fieldset>-->
+  <!--    <legend>Test Vue Reactivity</legend>-->
+  <!--    <reactive-counter />-->
+  <!--  </fieldset>-->
 
-  <fieldset>
-    <legend>Environment</legend>
-    <electron-versions />
-  </fieldset>
+  <!--  <fieldset>-->
+  <!--    <legend>Test Node.js API</legend>-->
+  <!--    <reactive-hash />-->
+  <!--  </fieldset>-->
+
+  <!--  <fieldset>-->
+  <!--    <legend>Environment</legend>-->
+  <!--    <electron-versions />-->
+  <!--  </fieldset>-->
 
   <p>
     Edit
